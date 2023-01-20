@@ -45,14 +45,19 @@ class AFD {
     this.setCurrentState(this._initialState);
 
     for (let i = 0; i < string.length; i++) {
+      let hasValueFlag = false;
       let char = string[i];
       if (this.inAlphabet(char)) {
         for (let t = 0; t < this._currentState.transitions.length; t++) {
           let transition = this._currentState.transitions[t];
           if (transition.hasValue(char)) {
             this.setCurrentState(transition.toNode);
+            hasValueFlag = true;
             break;
           }
+        }
+        if (!hasValueFlag) {
+          return false;
         }
       }
     }
