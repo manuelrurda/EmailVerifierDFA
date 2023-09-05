@@ -1,0 +1,13 @@
+{
+  "name":"EmailVerifierDFA",
+  "githubUrl":"https://github.com/manuelrurda/EmailVerifierDFA",
+  "description": "In this project, the problem of validating whether a string is a valid email address was addressed. To do this, a deterministic finite automaton (DFA) was used. Finite automata are powerful tools for validating input strings against specific patterns, and in this case, it was used to evaluate whether a given string satisfies the rules of a valid email address.",
+  "thumbnailUrl": "https://user-images.githubusercontent.com/62727899/233811326-b140be27-dbe8-4176-8e4d-b4adcf71da47.png",
+  "techTags": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "OOP"
+  ]
+}
+
